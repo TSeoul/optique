@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}La créatrice{% endblock %}
+
+{% block content %}
+
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- about section -->
+<body>
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="about_img">
+                     <figure><img src="{% static 'website/images/about_img.png' %}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>About Our Shop</h2>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                  </div>
+                  <a class="read_more" href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!--  footer -->
+
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'website/js/jquery.min.js' %}"></script>
+      <script src="{% static 'website/js/popper.min.js' %}"></script>
+      <script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'website/js/jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'website/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'website/js/custom.js' %}"></script>
+   </body>
+
+
+{% endblock %}

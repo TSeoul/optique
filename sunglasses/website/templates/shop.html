@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}E-boutique{% endblock %}
+
+{% block content %}
+ <body>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- Our shop section -->
+      <p>HELLO</p>
+<div class="menu_list">
+
+            {% for lunette in lunettes%}
+
+            <div class="menu_list_item">
+                <span class="menu_list_title">{{lunette.nom}}</span>
+                <span class="menu_list_prix">{{lunette.prix}} €</span>
+                {% if lunette.en_reduction%}
+                    <span class="menu_list_badge">-30%</span>
+                {% endif %}
+            </div>
+
+            {% endfor %}
+        </div>
+      <div id="about" class="shop">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div  class="shop_img">
+                     <figure><img src="{% static 'website/images/shop_img.png' %}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 padding_right0">
+                  <div class="max_width">
+                     <div class="titlepage">
+                        <h2>Best SunGlasses  At Our shop</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <a class="read_more" href="#">Shop Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Our shop section -->
+
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'website/js/jquery.min.js' %}"></script>
+      <script src="{% static 'website/js/popper.min.js' %}"></script>
+      <script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'website/js/jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'website/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'website/js/custom.js' %}"></script>
+   </body>
+
+{% endblock %}
